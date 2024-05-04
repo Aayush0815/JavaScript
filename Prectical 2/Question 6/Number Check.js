@@ -1,4 +1,3 @@
-// Function to check if a number is positive, negative, or zero
 function Number(number) 
 {
     if (number > 0) 
