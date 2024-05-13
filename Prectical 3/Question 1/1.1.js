@@ -34,5 +34,4 @@ const performCalculation = () => {
     alert("Result: " + result);
 };
 
-// Call the function to perform calculation
 performCalculation();
