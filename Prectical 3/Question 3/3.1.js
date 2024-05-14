@@ -1,13 +1,15 @@
-const meterToFoot = meter => meter * 3.28084;
+const meterToFoot = meter => meter * 3.28;
 
 const celsiusToFahrenheit = celsius => (celsius * 9/5) + 32;
 
 const dollarToRupees = dollar => dollar * 74.5; 
 
-const main = () => {
+const main = () => 
+    {
     let choice = parseInt(prompt("Choose the conversion:\n1. Meter to Foot\n2. Celsius to Fahrenheit\n3. Dollar to Rupees"));
 
-    switch(choice) {
+    switch(choice) 
+    {
         case 1:
             let meter = parseFloat(prompt("Enter the value in meters:"));
             let foot = meterToFoot(meter);

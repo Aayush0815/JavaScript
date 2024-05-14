@@ -1,33 +1,37 @@
-
-function rectangleArea(length, width) {
+function rectangleArea(length, width) 
+{
     return length * width;
 }
 
-function triangleArea(base, height) {
+function triangleArea(base, height) 
+{
     return 0.5 * base * height;
 }
 
-function circleArea(radius) {
+function circleArea(radius) 
+{
     return Math.PI * radius * radius;
 }
 
 let shape = prompt("Choose a shape:").toLowerCase();
 
-function calculateArea() {
+function calculateArea() 
+{
     let area;
-    switch (shape) {
+    switch (shape) 
+    {
         case 'rectangle':
-            const rectLength = parseFloat(prompt("Enter the length of the rectangle:"));
-            const rectWidth = parseFloat(prompt("Enter the width of the rectangle:"));
+            const rectLength = parseInt(prompt("Enter the length of the rectangle:"));
+            const rectWidth = parseInt(prompt("Enter the width of the rectangle:"));
             area = rectangleArea(rectLength, rectWidth);
             break;
         case 'triangle':
-            const triBase = parseFloat(prompt("Enter the base length of the triangle:"));
-            const triHeight = parseFloat(prompt("Enter the height of the triangle:"));
+            const triBase = parseInt(prompt("Enter the base length of the triangle:"));
+            const triHeight = parseInt(prompt("Enter the height of the triangle:"));
             area = triangleArea(triBase, triHeight);
             break;
         case 'circle':
-            const circleRadius = parseFloat(prompt("Enter the radius of the circle:"));
+            const circleRadius = parseInt(prompt("Enter the radius of the circle:"));
             area = circleArea(circleRadius);
             break;
         default:

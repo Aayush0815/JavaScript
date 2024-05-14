@@ -1,50 +1,46 @@
-function add(x, y) {
-    return x + y;
-}
-
-function subtract(x, y) 
-{
-    return x - y;
-}
-
-function multiply(x, y) 
-{
-    return x * y;
-}
-
-function divide(x, y) 
-{
-    if (y === 0) {
-        return "Error! Division by zero.";
-    } else {
-        return x / y;
+function add(x, y) 
+    {
+        return x + y;
     }
+function subtract(x, y) 
+    {
+        return x - y;
+    }
+function multiply(x, y) 
+    {
+        return x * y;
+    }
+function divide(x, y) 
+    {
+        if (y === 0) 
+            {
+                return "Error!";
+            } 
+        else 
+            {
+                return x / y;
+            }
 }
 
-function calculator() {
-    console.log("Select operation:");
-    console.log("1. Add");
-    console.log("2. Subtract");
-    console.log("3. Multiply");
-    console.log("4. Divide");
-
-    const choice = prompt("Enter choice (1/2/3/4): ");
+function calculator() 
+{
+    const choice = prompt("Enter choice (+, -, *, /): ");
     const num1 = parseFloat(prompt("Enter first number: "));
     const num2 = parseFloat(prompt("Enter second number: "));
 
     let result;
 
     switch (choice) {
-        case '1':
+        case '+':
             result = add(num1, num2);
             break;
-        case '2':
+        case '-':
             result = subtract(num1, num2);
             break;
-        case '3':
+        case '*':
             result = multiply(num1, num2);
             break;
-        case '4':
+        case '/':
             result = divide(num1, num2);
             break;
         default:

@@ -1,22 +1,26 @@
-function meterToFoot(meter) {
-    return meter * 3.28084;
+function meterToFoot(meter) 
+{
+    return meter * 3.28;
 }
 
-function celsiusToFahrenheit(celsius) {
+function celsiusToFahrenheit(celsius) 
+{
     return (celsius * 9/5) + 32;
 }
 
-
-function dollarToRupees(dollar) {
-
-    return dollar * 74.36;
+function dollarToRupees(dollar) 
+{
+    return dollar * 74.5;
 }
 
 let choice = parseInt(prompt("Choose a conversion type:\n1. Meter to Foot\n2. Celsius to Fahrenheit\n3. Dollar to Rupees"));
 
-function performConversion() {
+function Conversion() 
+{
     let result;
-    switch (choice) {
+    
+    switch (choice) 
+    {
         case 1:
             let meters = parseFloat(prompt("Enter length in meters:"));
             result = meterToFoot(meters);
@@ -37,4 +41,4 @@ function performConversion() {
     }
 }
 
-performConversion();
+Conversion();
