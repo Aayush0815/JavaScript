@@ -1,44 +1,8 @@
-function meterToFoot(meter) 
+for (let i = 99; i >= 11; i -= 11) 
 {
-    return meter * 3.28;
-}
-
-function celsiusToFahrenheit(celsius) 
-{
-    return (celsius * 9/5) + 32;
-}
-
-function dollarToRupees(dollar) 
-{
-    return dollar * 74.5;
-}
-
-let choice = parseInt(prompt("Choose a conversion type:\n1. Meter to Foot\n2. Celsius to Fahrenheit\n3. Dollar to Rupees"));
-
-function Conversion() 
-{
-    let result;
-    
-    switch (choice) 
+    console.log(i);
+    if (i === 77) 
     {
-        case 1:
-            let meters = parseFloat(prompt("Enter length in meters:"));
-            result = meterToFoot(meters);
-            console.log(`${meters} meters is equal to ${result.toFixed(2)} feet.`);
-            break;
-        case 2:
-            let celsius = parseFloat(prompt("Enter temperature in Celsius:"));
-            result = celsiusToFahrenheit(celsius);
-            console.log(`${celsius} Celsius is equal to ${result.toFixed(2)} Fahrenheit.`);
-            break;
-        case 3:
-            let dollars = parseFloat(prompt("Enter amount in dollars:"));
-            result = dollarToRupees(dollars);
-            console.log(`${dollars} dollars is equal to ${result.toFixed(2)} Rupees.`);
-            break;
-        default:
-            console.log("Invalid choice.");
+        i -= 11;
     }
 }
-
-Conversion();
